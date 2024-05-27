@@ -1,18 +1,18 @@
 // JavaScript Document
 
-let meinGewicht;
-let meineGroesse;
-let bmi=0;
+let breite;
+let hoehe;
+let pixel=0;
 
 
 
 
 
-function bmiBerechnen()
+function pixelBerechnen()
 {
- 	meinGewicht = document.getElementById('gewicht').value;
-	meineGroesse = document.getElementById('koerpergroesse').value;
-	bmi=meinGewicht/(Math.pow(meineGroesse,2));
-	console.log(bmi);
-	document.getElementById('bmiErgebnis').value=bmi;
+ 	breite = document.getElementById('breite').value;
+	hoehe = document.getElementById('hoehe').value;
+	pixel=breite*hoehe;
+	console.log(pixel);
+	document.getElementById('pixelErgebnis').value=pixel;
 }
